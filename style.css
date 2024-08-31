@@ -1,0 +1,368 @@
+
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root{
+--Blue: hsl(246, 80%, 60%);
+--Light-red /*(work)*/: hsl(15, 100%, 70%);
+--Soft-blue  /*(play)*/: hsl(195, 74%, 62%);
+--Light-red  /*(study)*/: hsl(348, 100%, 68%);
+--Lime-green  /*(exercise)*/: hsl(145, 58%, 55%);
+--Violet  /*(social)*/: hsl(264, 64%, 52%);
+--Soft-orange  /*(self care)*/: hsl(43, 84%, 65%);
+
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Rubik";
+    
+}
+
+body{
+    height: 100vh;
+    background: var(--Very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.leftContainer{
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.jeremy{
+    background-color: var(--Violet);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px 40px 20px;
+    border-radius: 15px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    justify-content: center;
+    
+}
+
+.personImage{
+    width: 60px;
+    height: 60px;
+    border: 3px white solid;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.name{
+    font-size: 36px;
+    font-weight: 200;
+    margin-top: 15px;
+    max-width: 165px;
+}
+
+.periodSelect{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 30px;      
+}
+
+.daily{
+    color: var(--Desaturated-blue);
+}
+
+.weekly{
+    color: var(--Desaturated-blue);
+}
+
+.monthly{
+    color: var(--Desaturated-blue);
+}
+
+.daily:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.weekly:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.monthly:hover{
+    color:white;
+    cursor: pointer;
+}
+
+i{
+    color: rgba(255, 255, 255, 0.854);
+    font-weight: 400;
+}
+
+i:hover{
+font-weight:900;
+cursor: pointer;
+color: white;
+}
+
+.reportFor{
+    color: var(--Pale-Blue);
+    font-weight:450 ;
+    font-size: 16px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    scale: 0.93;
+    margin-top: 26px;
+}
+
+.topCards{
+    display: flex;
+    gap: 30px;
+}
+
+.bottomCards{
+    display: flex;
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 250px;
+    padding: 30px 20px;
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    width: 230px;
+}
+
+.card:hover{
+    background-color: var(--Desaturated-blue);
+}
+
+.topCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors{
+position: absolute;
+width: 99%;
+height: 60%;
+left: 0;
+top: -50px;
+z-index: -10;
+display: flex;
+justify-content: flex-end;
+box-sizing: border-box;
+padding: 0px 25px;
+overflow: hidden;
+border-radius: 10px 10px 0px 0px;
+}
+
+.colors img{
+    width: 22%;
+    position: absolute;
+    top: -15px;
+}
+
+.orange img{
+    width: 22%;
+    position: absolute;
+    top: -15px;
+   
+}
+
+.blue{ 
+    background-color: var(--Soft-blue);
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;}
+
+
+.pink{
+    background-color: var(--Light-red);
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.green img{
+    top:0;
+}
+
+.green{
+    background-color: var(--Lime-green);
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.purple{
+    background-color: var(--Violet);
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.yellow{
+    background-color:var(--Soft-orange);
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.orange{
+    background-color: #FF8B64;
+    width: 99%;
+    left: 0.5%;
+    top: -40px;
+    z-index: -10;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.hours{
+    font-size: 35px;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px){
+    body{
+        height: 100%;
+    }
+
+    .jeremy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card{
+        width: 307px;
+    }
+
+    .personImage{
+        margin: 0;
+    }
+
+    .topCards{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .bottomCards{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .totalHours{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .hours{
+        margin: 0;
+    }
+
+    .name{
+        max-width: 100000px;
+        font-size: 20px;
+    }
+
+    .names{
+        justify-content: center;
+    }
+
+    .previousTime{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .periodSelect{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    
+}

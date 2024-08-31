@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="leftContainer">
+        <div class="jeremy">
+          <span class="personImage"
+            ><img src="images/image-jeremy.png" width="100%" /></span
+          >
+          <div class="names"><span class="reportFor">Report for</span
+          ><span class="name">Jeremy Robson</span></div>
+        </div>
+        <div class="periodSelect">
+          <span class="daily" id="daily">Daily</span
+          ><span class="weekly" id="weekly">Weekly</span
+          ><span class="monthly" id="monthly">Monthly</span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="topCards">
+          <div class="work card">
+            <div class="colors orange"><img src="images/icon-work.svg" /></div>
+            <div class="topCard">
+              <span class="domain">Work</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+            <div class="hours" id="orangeHours">---</div>
+            <div class="previousTime" id="previousWork">---</div>
+            </div>
+          </div>
+          <div class="play card">
+            <div class="colors blue"><img src="images/icon-play.svg" /></div>
+            <div class="topCard">
+              <span class="domain">Play</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+              <div class="hours" id="blueHours">---</div>
+              <div class="previousTime" id="previousPlay">---</div>
+            </div>
+          </div>
+          <div class="study card">
+            <div class="colors pink"><img src="images/icon-study.svg" /></div>
+            <div class="topCard">
+              <span class="domain">Study</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+              <div class="hours" id="pinkHours">---</div>
+              <div class="previousTime" id="previousStudy">---</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottomCards">
+          <div class="exercise card">
+            <div class="colors green">
+              <img src="images/icon-exercise.svg" />
+            </div>
+            <div class="topCard">
+              <span class="domain">Exercise</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+              <div class="hours" id="greenHours">---</div>
+              <div class="previousTime" id="previousExercise">---</div>
+            </div>
+          </div>
+          <div class="social card">
+            <div class="colors purple">
+              <img src="images/icon-social.svg" />
+            </div>
+            <div class="topCard">
+              <span class="domain">Social</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+              <div class="hours" id="purpleHours">---</div>
+              <div class="previousTime" id="previousSocial">---</div>
+            </div>
+          </div>
+          <div class="selfCare card">
+            <div class="colors yellow">
+              <img src="images/icon-self-care.svg" />
+            </div>
+            <div class="topCard">
+              <span class="domain">Self Care</span
+              ><span class="settings"><i class="fa-solid fa-list-ul"></i></span>
+            </div>
+            <div class="totalHours">
+              <div class="hours" id="yellowHours">---</div>
+              <div class="previousTime" id="previousSelf">---</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/3f3af117f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
